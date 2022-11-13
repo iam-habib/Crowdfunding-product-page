@@ -211,6 +211,7 @@ main {
 
 .bar-fill {
   width: 89.9%;
+  max-width: 100%;
   height: 0.7em;
   background-color: var(--Moderatecyan);
   border-radius: 1em;
