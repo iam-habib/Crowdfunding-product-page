@@ -588,6 +588,13 @@ input[type="radio"]:checked + label .pledge-flex p {
   html {
     font-size: 14px;
   }
+  
+    header {
+    background: url(images/image-hero-mobile.jpg);
+    height: 25em;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   nav {
     width: 90vw;
