@@ -1,0 +1,900 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+:root {
+  --Moderatecyan: hsl(176, 50%, 47%);
+  --Darkcyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Darkgray: hsl(0, 0%, 48%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background: url(images/image-hero-desktop.jpg);
+  height: 25em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 80vw;
+  height: 7em;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10em;
+}
+
+.open-menu {
+  display: none;
+  visibility: hidden;
+}
+
+.close-menu {
+  display: none;
+  visibility: hidden;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_list a {
+  color: white;
+  margin-right: 1em;
+  font-weight: 500;
+}
+
+.nav_list li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  bottom: 6em;
+}
+
+.back-project-container {
+  background-color: #fff;
+  text-align: center;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.m-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -2em;
+}
+
+.back-project-container h1 {
+  margin: 1em 0 0.5em;
+  font-size: 1.8rem;
+}
+
+.back-project-container p {
+  color: var(--Darkgray);
+}
+
+.project-bookmark {
+  margin: 2em auto 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cyan {
+  color: white;
+  background-color: var(--Moderatecyan);
+  padding: 1em 2.5em;
+  border-radius: 2em;
+  font-weight: 500;
+}
+
+.bookmark_mobileicon {
+  display: none;
+  visibility: hidden;
+}
+
+.btn-cyan:hover {
+  background-color: var(--Darkcyan);
+}
+
+.bookmark-btn {
+  display: inline-block;
+  width: 10em;
+  height: 3.5em;
+  padding: 1em 0 1em 2em;
+  color: var(--Darkgray);
+  background-color: rgb(236, 236, 236);
+  border-radius: 2em;
+  font-weight: 700;
+  position: relative;
+}
+
+.bookmark-btn1 {
+  display: inline-block;
+  width: 10em;
+  height: 3.5em;
+  padding: 1em 0 1em 2em;
+  color: var(--Darkgray);
+  background-color: rgb(236, 236, 236);
+  border-radius: 2em;
+  font-weight: 700;
+  position: relative;
+}
+
+.bookmarked {
+  color: var(--Darkcyan);
+}
+
+.bookmarked circle {
+  fill: var(--Darkcyan);
+}
+
+.bookmarked path {
+  fill: white;
+}
+
+.bookmark_icon {
+  position: absolute;
+  top: 0;
+  left: -1em;
+}
+
+.amount-backed-progress {
+  background-color: #fff;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+
+.amount-backed-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  margin-bottom: 2em;
+}
+
+.funds-backed {
+  padding-right: 2em;
+  border-right: 1px solid rgb(172, 172, 172, 0.5);
+}
+
+.funds-backed h1,
+.total-backers h1,
+.days-left h1 {
+  font-size: 2.2rem;
+}
+
+.funds-backed p,
+.total-backers p,
+.days-left p {
+  margin-top: 0.2em;
+  color: var(--Darkgray);
+}
+
+.total-backers {
+  padding: 0 4em 0 2em;
+  border-right: 1px solid rgb(172, 172, 172, 0.5);
+}
+
+.days-left {
+  padding: 0 4em 0 2em;
+}
+
+.funds-bar {
+  height: 0.7em;
+  border-radius: 1em;
+  background-color: rgb(223, 223, 223);
+}
+
+.bar-fill {
+  width: 89.9%;
+  height: 0.7em;
+  background-color: var(--Moderatecyan);
+  border-radius: 1em;
+}
+
+.about-project {
+  background-color: #fff;
+  padding: 2em 2.5em 2em 3em;
+}
+
+.about-project > p {
+  color: var(--Darkgray);
+  line-height: 1.5;
+  margin: 1em 0 2em;
+}
+
+.box {
+  padding: 2em;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.2);
+  border-radius: 1em;
+  margin: 2em 0;
+}
+
+.box p {
+  color: var(--Darkgray);
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.box-title p {
+  color: var(--Moderatecyan);
+  font-weight: 500;
+}
+
+.box-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.box-select h1 {
+  font-size: 2rem;
+}
+
+.box-select span {
+  color: var(--Darkgray);
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  margin-left: 0.5em;
+}
+
+.out-stock {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.out-stock p {
+  font-weight: 400;
+}
+
+.out-stock .btn-cyan {
+  background-color: var(--Darkgray);
+}
+
+/* pledge pop up*/
+
+.thank-you {
+  width: 32em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  z-index: 1;
+}
+
+.thank-you img {
+  margin: 1em 0;
+}
+
+.thank-you p {
+  color: var(--Darkgray);
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+.got-it {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.support_pop {
+  background-color: #fff;
+  padding: 2em 3em;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 11.5em;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  cursor: pointer;
+}
+
+.support_pop article p {
+  color: var(--Darkgray);
+  margin: 1em 0;
+}
+
+.pledge-card {
+  display: block;
+  margin: 2em auto;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.pledge-card-details {
+  display: block;
+  margin: 2em 1em 2em 4em;
+}
+
+.pledge-card-details h3:hover {
+  color: var(--Moderatecyan);
+}
+
+.pledge-card-details p {
+  color: var(--Darkgray);
+  margin: 1em 0;
+}
+
+input[type="radio"] {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+
+.radio {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #dfdfdf;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label .radio {
+  border: 1px solid var(--Moderatecyan);
+}
+
+input[type="radio"]:checked + label .radio:before {
+  background-color: var(--Moderatecyan);
+}
+
+input[type="radio"]:checked + .pledge-card {
+  border: 2px solid var(--Moderatecyan);
+}
+
+.enter-pledge {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 1.5em 1em;
+  margin-right: 1em;
+  visibility: hidden;
+  display: none;
+  justify-content: space-between;
+}
+
+input[type="radio"]:checked + label .enter-pledge {
+  visibility: visible;
+  display: flex;
+}
+
+.pledge-enter {
+  width: 50%;
+  border: none;
+  outline: none;
+}
+
+.enter-amount {
+  width: 8em;
+  height: 3em;
+  border-radius: 2em;
+  padding: 1em 1em 1em 2.5em;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  outline-color: black;
+  font-family: inherit;
+  font-weight: 700;
+  position: relative;
+}
+
+.dollar-inp {
+  position: relative;
+}
+
+.dollar {
+  position: absolute;
+  top: 0.6em;
+  left: 8%;
+  color: grey;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.pledge-continue {
+  padding: 0.8em 1.5em;
+  margin-left: 1em;
+}
+
+.pledge-continue:hover {
+  background-color: var(--Darkcyan);
+}
+
+.noreward-continue {
+  padding: 0.8em 1.5em;
+  margin-left: 1em;
+  position: absolute;
+  right: 2em;
+  bottom: 0.8em;
+}
+
+.pledge-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+
+.pledge-flex div {
+  display: flex;
+}
+
+.pledge-flex p {
+  margin: 0;
+  margin-left: 1em;
+  color: var(--Moderatecyan);
+  font-weight: 500;
+}
+
+.pledge-flex span {
+  color: var(--Darkgray);
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  margin-left: 0.5em;
+}
+
+.remove {
+  display: none;
+  visibility: none;
+}
+
+input[type="radio"]:checked + label .pledge-flex p {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.pledge-card-details {
+  margin: 2em 2em 2em 4em;
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1440px) {
+  main {
+    width: 60%;
+  }
+  .support_pop {
+    width: 60%;
+  }
+
+  .pledge-enter {
+    width: 40%;
+    border: none;
+    outline: none;
+  }
+
+  .dollar {
+    left: 8%;
+  }
+
+  .pledge-card-details {
+    margin: 2em 2em 2em 4em;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1130px) {
+  main {
+    width: 70%;
+  }
+  .support_pop {
+    width: 70%;
+  }
+
+  .pledge-card-details {
+    margin: 2em 2em 2em 4em;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 950px) {
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    width: 80%;
+  }
+  .support_pop {
+    width: 80%;
+  }
+
+  .bookmark_icon {
+    top: -0.3em;
+    scale: 0.9;
+  }
+
+  .pledge-enter {
+    width: 40%;
+    border: none;
+    outline: none;
+  }
+
+  .dollar {
+    top: 0.85em;
+    left: 8%;
+  }
+
+  .pledge-card-details {
+    margin: 2em 2em 2em 4em;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  nav {
+    width: 90vw;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .support_pop {
+    width: 90%;
+  }
+
+  .open-menu {
+    display: block;
+    visibility: visible;
+  }
+
+  .close-menu {
+    display: block;
+    visibility: visible;
+  }
+
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 10em;
+    background-color: #fff;
+    position: absolute;
+    top: 6em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: left;
+    border-radius: 0.5em;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav_list li {
+    padding: 1em;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+  }
+
+  .nav_list li a {
+    color: var(--Black);
+  }
+
+  .nav_list li a:hover {
+    color: var(--Black);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .back-project-container {
+    padding: 2em 1.5em 1em;
+  }
+
+  .amount-backed-progress {
+    padding: 2em 1.5em 1em;
+  }
+
+  .about-project {
+    padding: 2em 1.5em 1em;
+  }
+
+  .amount-backed-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .funds-backed {
+    padding-right: 0;
+    padding-bottom: 1.5em;
+    border-right: 0;
+    border-bottom: 0;
+    border-bottom-width: 0;
+    position: relative;
+  }
+
+  .funds-backed:after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: rgb(128, 128, 128, 0.2);
+  }
+
+  .total-backers {
+    padding: 1.5em 0em;
+    border-right: 0;
+    position: relative;
+  }
+
+  .total-backers::after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: rgb(128, 128, 128, 0.2);
+  }
+
+  .days-left {
+    padding: 1.5em 0 1em;
+  }
+
+  .bookmark_icon {
+    top: -0.3em;
+    scale: 0.9;
+  }
+
+  .pledge-enter {
+    width: 40%;
+    border: none;
+    outline: none;
+  }
+
+  .dollar {
+    top: 0.85em;
+    left: 8%;
+  }
+
+  .pledge-card-details {
+    margin: 2em 2em 2em 4em;
+  }
+
+  .thank-you {
+    width: 80vw;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 570px) {
+  .enter-pledge {
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 1.5em 1em;
+    visibility: hidden;
+    display: none;
+    justify-content: unset;
+  }
+
+  input[type="radio"]:checked + label .enter-pledge {
+    visibility: visible;
+    display: block;
+  }
+
+  .pledge-enter {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .enter-amount {
+    width: 7em;
+    height: 3em;
+    border-radius: 2em;
+    padding: 1em 1em 1em 2.5em;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    outline-color: black;
+    font-family: inherit;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .dollar-inp {
+    margin: 0 1em;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dollar {
+    position: relative;
+    top: 0em;
+    left: 2em;
+    color: grey;
+    font-weight: 700;
+    z-index: 1;
+  }
+
+  .pledge-continue {
+    padding: 0.8em 1.5em;
+    margin-left: 1em;
+  }
+
+  .noreward-continue {
+    text-align: center;
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin-left: 0em;
+    margin: 0.5em auto 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    right: 0em;
+    bottom: 0em;
+  }
+
+  .desktop-remove {
+    display: none;
+    visibility: none;
+  }
+
+  .remove {
+    display: block;
+    visibility: visible;
+  }
+
+  .remove span {
+    color: var(--Darkgray);
+    font-size: 0.5em;
+    font-weight: 400;
+    vertical-align: super;
+    margin-left: 0.5em;
+  }
+
+  .pledge-flex div {
+    flex-direction: column;
+  }
+
+  .pledge-flex p {
+    margin: 0.5em 0 0 0;
+    margin-left: 0em;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 500px) {
+  .project-bookmark {
+    margin: 2em 0 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back-project-btn {
+    color: white;
+    background-color: var(--Moderatecyan);
+    padding: 1em 2.5em;
+    border-radius: 2em;
+    font-weight: 500;
+  }
+
+  .bookmark_mobileicon {
+    display: block;
+    visibility: visible;
+    margin-left: 1em;
+    scale: 0.9;
+  }
+
+  .bookmark-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  .box-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+  }
+
+  .box-title p {
+    margin: 0.5em 0;
+  }
+
+  .box-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+
+  .box-select h1 {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 370px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .back-project-container h1 {
+    margin: 2em 0 0.5em;
+  }
+}
